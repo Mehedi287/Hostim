@@ -1,10 +1,12 @@
 import React from "react";
+import HomeBanner from "../components/HomeBanner";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-green-900">
       <Navbar />
+      <HomeBanner></HomeBanner>
     </div>
   );
 };
