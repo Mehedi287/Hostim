@@ -1,6 +1,7 @@
 import React from "react";
 import HomeBanner from "../components/HomeBanner";
 import Navbar from "../components/Navbar";
+import Soluation from "../components/Soluation";
 import homeBg from "../images/homebg.png";
 import BrandSection from "./../components/BrandSection";
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Navbar />
       <HomeBanner></HomeBanner>
       <BrandSection />
+      <Soluation />
     </div>
   );
 };
