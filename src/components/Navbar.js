@@ -46,228 +46,229 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 w-full z-40">
-        <div className="text-[14px] pt-[7px] pb-[8px] font-medium text-white  bg-[#007aff] flex justify-center items-center">
-          <img src={topLogo} alt="" />
-          <h1 className="ml-4">
-            Important message <span className="underline">gose to here</span>
-          </h1>
-        </div>
-      </div>
-      <div
-        className={`px-2 z-40  fixed top-[35px] ${
-          !isDark ? " lg:text-white bg-transparent" : "bg-gray-100 text-black "
-        }   w-full  `}
-      >
-        <nav
-          className={`   lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-2 w-full mx-auto`}
-        >
-          <div className="container flex flex-wrap items-center justify-between lg:mx-auto w-100  ">
-            <a href="#" className="flex items-center lg:mr-5 md:mr-5">
-              <img
-                src={isDark ? logo : whiteLogo}
-                className="img "
-                alt="Homtim Logo"
-              />
-            </a>
-            <button
-              onClick={handleSetIsShow}
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600   right-0  "
-              aria-controls="navbar-dropdown"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-            <div
-              class={`w-full ${
-                !isShow ? "hidden" : "block"
-              } lg:block lg:w-auto md:mr-[270px] mr-[0]`}
-              id="navbar-dropdown"
-            >
-              <ul class="flex relative flex-col p-4 mt-4 border leading-[22px] lg:ml-12  border-gray-100 lg:rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-[16px] md:font-medium md:border-0 md:bg-transparent ">
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-inherit text-[16px]  rounded md:bg-transparent  md:p-0    "
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <button
-                    onClick={handleHidden}
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-medium   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto   "
-                  >
-                    Hosting{" "}
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  {/* <!-- Dropdown menu --> */}
-                  <div
-                    id="dropdownNavbar"
-                    class={`z-10  absolute  ${
-                      hidden ? "hidden" : "block"
-                    }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-md w-44`}
-                  >
-                    <ul
-                      class="py-2 text-md text-[16px] leading-[22px]  text-start bg-white text-black rounded-md"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          {" "}
-                          Web Hosting
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          {" "}
-                          Email Hosting
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          {" "}
-                          Domain Name
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          {" "}
-                          Domain Transfer
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          {" "}
-                          Legal DocumentsP
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4  rounded hover:text-blue-700  md:border-0 md:hover:text-blue-700 md:p-0  "
-                  >
-                    VPS
-                  </a>
-                </li>
-                <li>
-                  <button
-                    onClick={handleEmailDrop}
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-medium   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto   "
-                  >
-                    Hosting{" "}
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  {/* <!-- Dropdown menu --> */}
-                  <div
-                    id="dropdownNavbar"
-                    class={`z-10  absolute   ${
-                      emailDrop ? "hidden" : "block"
-                    }  font-normal bg-white text-black text-start  divide-y   rounded-lg shadow lg:w-44 w-44`}
-                  >
-                    <ul
-                      class="py-2 text-md  text-[16px] leading-[22px]  "
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          Ecology 1
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
-                        >
-                          Ecology 2
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div
-              className={`${
-                !isShow ? "hidden" : "block"
-              } lg:block mx-auto xs:bg-white xs:w-full m-0 p-2`}
-              id="navbar-dropdown"
-            >
-              <button className="mr-[32px]  ">Login</button>
-              <button className="  main-color px-[36px] py-[16px] rounded-[50px] text-white text-sm">
-                Try for free
-              </button>
-            </div>
+      <div className="   ">
+        <div className="fixed top-0 left-0 right-0 w-full z-40">
+          <div className="text-[14px] pt-[7px] pb-[8px] font-medium text-white  bg-[#007aff] flex justify-center items-center">
+            <img src={topLogo} alt="" />
+            <h1 className="ml-4">
+              Important message <span className="underline">gose to here</span>
+            </h1>
           </div>
-        </nav>
-      </div>
+        </div>
+        <div
+          className={`px-4 z-40  fixed top-[35px] ${
+            !isDark
+              ? " lg:text-white bg-transparent"
+              : "bg-gray-100 text-black "
+          }   w-full  `}
+        >
+          <nav className={`    py-2 w-full mx-auto`}>
+            <div className=" lg:px-[96px] container flex flex-wrap items-center justify-between lg:mx-auto w-100  ">
+              <a href="#" className="flex items-center lg:mr-5 md:mr-5">
+                <img
+                  src={isDark ? logo : whiteLogo}
+                  className="img "
+                  alt="Homtim Logo"
+                />
+              </a>
+              <button
+                onClick={handleSetIsShow}
+                data-collapse-toggle="navbar-dropdown"
+                type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600   right-0  "
+                aria-controls="navbar-dropdown"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class={`w-full ${
+                  !isShow ? "hidden" : "block"
+                } lg:block lg:w-auto md:mr-[270px] mr-[0]`}
+                id="navbar-dropdown"
+              >
+                <ul class="flex relative flex-col p-4 mt-4 border leading-[22px] lg:ml-0   border-gray-100 lg:rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-[16px] md:font-medium md:border-0 md:bg-transparent ">
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 text-inherit text-[16px]  rounded md:bg-transparent  md:p-0    "
+                      aria-current="page"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <button
+                      onClick={handleHidden}
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-medium   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto   "
+                    >
+                      Hosting{" "}
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    {/* <!-- Dropdown menu --> */}
+                    <div
+                      id="dropdownNavbar"
+                      class={`z-10  absolute  ${
+                        hidden ? "hidden" : "block"
+                      }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-md w-44`}
+                    >
+                      <ul
+                        class="py-2 text-md text-[16px] leading-[22px]  text-start bg-white text-black rounded-md"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            {" "}
+                            Web Hosting
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            {" "}
+                            Email Hosting
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            {" "}
+                            Domain Name
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            {" "}
+                            Domain Transfer
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            {" "}
+                            Legal DocumentsP
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4  rounded hover:text-blue-700  md:border-0 md:hover:text-blue-700 md:p-0  "
+                    >
+                      VPS
+                    </a>
+                  </li>
+                  <li>
+                    <button
+                      onClick={handleEmailDrop}
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-medium   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto   "
+                    >
+                      Hosting{" "}
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    {/* <!-- Dropdown menu --> */}
+                    <div
+                      id="dropdownNavbar"
+                      class={`z-10  absolute   ${
+                        emailDrop ? "hidden" : "block"
+                      }  font-normal bg-white text-black text-start  divide-y   rounded-lg shadow lg:w-44 w-44`}
+                    >
+                      <ul
+                        class="py-2 text-md  text-[16px] leading-[22px]  "
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            Ecology 1
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:bg-[#007aff] hover:text-white"
+                          >
+                            Ecology 2
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                className={`${
+                  !isShow ? "hidden" : "inline"
+                } lg:flex     xs:bg-white xs:w-full m-0 p-2 right-0 `}
+                id="navbar-dropdown"
+              >
+                <button className="mr-[32px]  ">Login</button>
+                <button className="  main-color px-[36px] py-[16px] rounded-[50px] text-white text-sm">
+                  Try for free
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
 
-      {/* <h1>
+        {/* <h1>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
         officiis? Soluta repellendus in ipsam est dolores, id beatae nulla
         exercitationem eos velit delectus. Odit quasi magni nam dignissimos nisi
@@ -379,6 +380,7 @@ const Navbar = () => {
         neque delectus numquam placeat explicabo! Doloribus adipisci, hic
         tenetur delectus reiciendis sit?
       </h1> */}
+      </div>
     </>
   );
 };

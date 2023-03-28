@@ -11,7 +11,7 @@ const Home = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="homeBg bg-green-400 "
+      className="homeBg bg-green-400    "
     >
       <Navbar />
       <HomeBanner></HomeBanner>

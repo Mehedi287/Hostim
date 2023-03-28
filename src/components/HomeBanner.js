@@ -5,7 +5,7 @@ const HomeBanner = () => {
     <div className="lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1">
       <div className="flex justify-between items-center pb-[77px] p-2 relative overflow-hidden ">
         <div className=" text-left text-white ">
-          <h1 className="pt-[175px]    text-[64px]  font-bold">
+          <h1 className="pt-[175px]    ld:text-[64px] text-[40px] font-bold">
             Affordable <br /> Hostim Solution <br /> Website
           </h1>
           <p className="mt-[22px] mb-[44px]">
