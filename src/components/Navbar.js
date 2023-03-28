@@ -1,20 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../images/hostimLogo.png";
+import whiteLogo from "../images/whiteLogo.png";
+import topLogo from "../images/hostimWhiteLogo.png";
+
 const Navbar = () => {
   const [hidden, setHidden] = useState(true);
   const [emailDrop, setEmailDrop] = useState(true);
-  const [isShow, setIsShow] = useState(true);
+  const [isShow, setIsShow] = useState(false);
   const [isDark, setDark] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setDark(true);
-    } else {
-      if (!isDark) {
-        setDark(false);
+
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= 80) {
+        setDark(true);
+      } else {
+        if (!isDark) {
+          setDark(false);
+        }
       }
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
+    };
+    window.addEventListener("scroll", changeNavbarColor);
+  }, []);
+
   const handleHidden = () => {
     if (hidden) {
       setHidden(false);
@@ -36,24 +43,32 @@ const Navbar = () => {
       setIsShow(true);
     }
   };
+
   return (
     <>
-      <div className="fixed w-full">
-        <h1 className="text-[14px] pt-[7px] pb-[8px] font-medium text-white main-color">
-          logo Important message <span className="underline">gose to here</span>
-        </h1>
+      <div className="fixed top-0 left-0 right-0 w-full z-40">
+        <div className="text-[14px] pt-[7px] pb-[8px] font-medium text-white  bg-[#007aff] flex justify-center items-center">
+          <img src={topLogo} alt="" />
+          <h1 className="ml-4">
+            Important message <span className="underline">gose to here</span>
+          </h1>
+        </div>
       </div>
       <div
-        className={`px-2  fixed top-[35px] ${
-          !isDark ? "bg-transparent text-white" : "bg-gray-100 text-black "
-        } border-gray-200  w-full  `}
+        className={`px-2 z-40  fixed top-[35px] ${
+          !isDark ? " lg:text-white bg-transparent" : "bg-gray-100 text-black "
+        }   w-full  `}
       >
         <nav
           className={`   lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-2 w-full mx-auto`}
         >
-          <div className="container flex flex-wrap items-center justify-between lg:mx-auto w-100">
-            <a href="#" className="flex items-center">
-              <img src={logo} className="img lg:mr-3  " alt="Homtim Logo" />
+          <div className="container flex flex-wrap items-center justify-between lg:mx-auto w-100  ">
+            <a href="#" className="flex items-center lg:mr-5 md:mr-5">
+              <img
+                src={isDark ? logo : whiteLogo}
+                className="img "
+                alt="Homtim Logo"
+              />
             </a>
             <button
               onClick={handleSetIsShow}
@@ -84,7 +99,7 @@ const Navbar = () => {
               } lg:block lg:w-auto md:mr-[270px] mr-[0]`}
               id="navbar-dropdown"
             >
-              <ul class="flex relative flex-col p-4 mt-4 border leading-[22px]   border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-[16px] md:font-medium md:border-0 md:bg-transparent ">
+              <ul class="flex relative flex-col p-4 mt-4 border leading-[22px] lg:ml-12  border-gray-100 lg:rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-[16px] md:font-medium md:border-0 md:bg-transparent ">
                 <li>
                   <a
                     href="#"
@@ -124,7 +139,7 @@ const Navbar = () => {
                     }  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-md w-44`}
                   >
                     <ul
-                      class="py-2 text-md text-[16px] leading-[22px]  text-start bg-white"
+                      class="py-2 text-md text-[16px] leading-[22px]  text-start bg-white text-black rounded-md"
                       aria-labelledby="dropdownLargeButton"
                     >
                       <li>
@@ -210,7 +225,7 @@ const Navbar = () => {
                     id="dropdownNavbar"
                     class={`z-10  absolute   ${
                       emailDrop ? "hidden" : "block"
-                    }  font-normal bg-transparent divide-y divide-gray-100 rounded-lg shadow lg:w-44 w-44`}
+                    }  font-normal bg-white text-black text-start  divide-y   rounded-lg shadow lg:w-44 w-44`}
                   >
                     <ul
                       class="py-2 text-md  text-[16px] leading-[22px]  "
@@ -238,7 +253,9 @@ const Navbar = () => {
               </ul>
             </div>
             <div
-              className={`${!isShow ? "hidden" : "block"} lg:block   mx-auto`}
+              className={`${
+                !isShow ? "hidden" : "block"
+              } lg:block mx-auto xs:bg-white xs:w-full m-0 p-2`}
               id="navbar-dropdown"
             >
               <button className="mr-[32px]  ">Login</button>
