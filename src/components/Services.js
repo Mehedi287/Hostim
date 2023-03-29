@@ -5,20 +5,30 @@ import service2 from "../images/service2.png";
 import service3 from "../images/service3.png";
 import service4 from "../images/service4.png";
 import imgBg from "../images/imgBg.png";
+import phoneIcon from "../images/phoneIcon.png";
 const Services = () => {
   return (
     <div className="  bg-white ">
       <div className="relative container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-8 px-3 md:px-0  ">
         <div className="  grid grid-cols-1  md:grid-cols-2 bg-left-bottom  gap-[40px]   h-full   ">
           <div
-            className=" bg-no-repeat bg-contain h-full   md:relative md:top-[50px]  "
+            className=" bg-no-repeat bg-contain h-full   relative md:top-[50px]  top-[20px] "
             style={{ backgroundImage: `url(${imgBg})` }}
           >
             <img
-              className="md:absolute md:top-[-38px] md:left-[50px] md:bottom-[50px] to-[-400px]  "
+              className="md:absolute  relative md:top-[-38px] md:left-[50px] md:bottom-[50px]  bottom-[100px] "
               src={serviceMan}
               alt=""
             />
+            <div className="absolute  top-[300px] md:top-[455px] left-1/3 -rotate-[17deg]">
+              <a
+                href=" "
+                className="flex justify-center items-center py-2 rounded-md px-3 xl:px-12  text-white rounded-0  bg-[#007aff]"
+              >
+                <img className="w-[30px] xl:w-[46px]" src={phoneIcon} alt="" />
+                <span>(123) 234 - 5678</span>
+              </a>
+            </div>
           </div>
 
           <div className="  flex-row justify-center items-center z-30  text-white md:pl-[50px] pl-[15px] pb-[40px] pr-[20px]">
