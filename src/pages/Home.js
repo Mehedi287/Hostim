@@ -1,4 +1,5 @@
 import React from "react";
+import ChoseHostingPackag from "../components/ChoseHostingPackag";
 import HomeBanner from "../components/HomeBanner";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
@@ -13,6 +14,7 @@ const Home = () => {
       <BrandSection />
       <Soluation />
       <Services />
+      <ChoseHostingPackag />
     </div>
   );
 };

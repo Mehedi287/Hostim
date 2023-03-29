@@ -46,4 +46,10 @@ background-color:  #007aff;
 .homeBg{
   background-color:  rgb(8 25 45/var(--tw-bg-opacity))!important;
 }
- 
+.bg-banner {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 25 45/var(--tw-bg-opacity));
+}
+.font-inter{
+  font-family: Inter,sans-serif;
+}
