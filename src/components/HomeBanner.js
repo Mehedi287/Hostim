@@ -1,9 +1,17 @@
 import React from "react";
 import bannerBg from "../images/bannerbg.png";
+import homeBg from "../images/homebg.png";
 const HomeBanner = () => {
   return (
-    <div className="lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 px-3 md:px-0">
-      <div className="flex justify-between items-center pb-[77px] p-2 relative overflow-hidden ">
+    <div
+      style={{
+        backgroundImage: `url(${homeBg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+      }}
+      className="lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 px-3 md:px-0 homeBg bg-white  "
+    >
+      <div className="md:flex justify-between items-center pb-[77px] p-2 md:relative md:overflow-hidden ">
         <div className=" text-left text-white ">
           <h1 className="pt-[175px]    lg:text-[64px] text-[40px] font-bold">
             Affordable <br /> Hostim Solution <br /> Website
@@ -24,7 +32,7 @@ const HomeBanner = () => {
             30 day money back guarantee
           </p>
         </div>
-        <div className="absolute top-[350px] left-[600px] opacity-5">
+        <div className="md:absolute md:top-[350px] md:left-[600px] opacity-5 mt-5 md:mt-0">
           <img src={bannerBg} alt="" />
         </div>
       </div>
