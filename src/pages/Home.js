@@ -14,7 +14,7 @@ const Home = () => {
       <BrandSection />
       <Soluation />
       <Services />
-      {/* <ChoseHostingPackag /> */}
+      <ChoseHostingPackag />
     </div>
   );
 };

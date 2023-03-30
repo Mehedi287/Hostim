@@ -25,7 +25,7 @@ const ChoseHostingPackag = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-0">
+      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-[0px] mx-auto">
         <h1 className="text-center text-[22px] md:text-[32px] font-[700]  mb-[18px] pt-[80px] leading-[32px] md:leading-[40px] ">
           Choose your hosting package
         </h1>
@@ -55,7 +55,7 @@ const ChoseHostingPackag = () => {
             <p className="text-[#E1B207]">(100% saved)</p>P
           </div>
         </div>
-        <div className="grid  lg:grid-cols-3 grid-cols-1 gap-5">
+        <div className="grid   md:grid-cols-3 grid-cols-1 gap-5 w-full mx-auto">
           <div className="border px-[30px] border-[#64788E] rounded-[8px] bg-[#172535] text-white text-center font-inter w-auto py-[36px]">
             <div className="mb-[50px] ">
               <h1 className="text-[18px] font-semibold">

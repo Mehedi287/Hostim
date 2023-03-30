@@ -4,7 +4,7 @@ import icon from "../images/icon.png";
 const Soluation = () => {
   return (
     <div className="  bg-white ">
-      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-0">
+      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-[50px]">
         <div className="  grid grid-cols-1  md:grid-cols-2    h-full items-center ">
           <div className="  flex-row justify-center items-center md:order-1 order-2 ">
             <h1 className=" text-start text-[22px] md:text-[32px] font-[700]  mb-[16px] pt-[80px] leading-[32px] md:leading-[40px]  ">
