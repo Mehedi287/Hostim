@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="   ">
+      <div className="">
         <div className="fixed top-0 left-0 right-0 w-full z-40">
           <div className="text-[14px] pt-[7px] pb-[8px] font-medium text-white  bg-[#007aff] flex justify-center items-center">
             <img src={topLogo} alt="" />
@@ -56,18 +56,18 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`px-4 z-40  fixed top-[35px] ${
+          className={`px-4 z-40 md:mx-auto md:px-5  fixed top-[35px] ${
             !isDark
               ? " lg:text-white bg-transparent"
               : "bg-gray-100 text-black "
           }   w-full  `}
         >
           <nav className={`    py-2 w-full mx-auto`}>
-            <div className=" lg:px-[96px] container flex flex-wrap items-center justify-between lg:mx-auto w-100  ">
+            <div className=" lg:px-[96px] md:px-0 md:mx-auto  container flex flex-wrap items-center justify-between lg:mx-auto w-100  ">
               <a href="#" className="flex items-center lg:mr-5 md:mr-5">
                 <img
                   src={isDark ? logo : whiteLogo}
-                  className="img "
+                  className="  "
                   alt="Homtim Logo"
                 />
               </a>
@@ -97,7 +97,7 @@ const Navbar = () => {
               <div
                 class={`w-full ${
                   !isShow ? "hidden" : "block"
-                } lg:block lg:w-auto md:mr-[270px] mr-[0]`}
+                } lg:block lg:w-auto lg:mr-[270px] mr-[0]`}
                 id="navbar-dropdown"
               >
                 <ul class="flex relative flex-col p-4 mt-4 border leading-[22px] lg:ml-0   border-gray-100 lg:rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-[16px] md:font-medium md:border-0 md:bg-transparent ">

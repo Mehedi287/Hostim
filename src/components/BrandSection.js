@@ -4,8 +4,8 @@ import ratingImg from "../images/rating.png";
 const BrandSection = () => {
   return (
     <div className="  bg-white ">
-      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-8 px-3 md:px-0">
-        <img className="w-auto mt-[57px]" src={brandImg} alt="" />
+      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-8 px-3 md:px-[0px] mx-auto w-full">
+        <img className=" w-auto mx-auto mt-[57px] pr-3" src={brandImg} alt="" />
         <div className="  grid grid-cols-1  md:grid-cols-2 xl:gap-[160px] md:gap-[20px] gap-2 h-full items-center ">
           <div className=" md:pt-[119px] pt-[60px]   ">
             <img className=" " src={ratingImg} alt="" />
