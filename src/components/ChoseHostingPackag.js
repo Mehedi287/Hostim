@@ -25,7 +25,7 @@ const ChoseHostingPackag = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-[0px] mx-auto">
+      <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-[0px] mx-auto relative">
         <h1 className="text-center text-[22px] md:text-[32px] font-[700]  mb-[18px] pt-[80px] leading-[32px] md:leading-[40px] ">
           Choose your hosting package
         </h1>
@@ -56,7 +56,8 @@ const ChoseHostingPackag = () => {
           </div>
         </div>
         <div className="grid   md:grid-cols-3 grid-cols-1 gap-5 w-full mx-auto">
-          <div className="border px-[30px] border-[#64788E] rounded-[8px] bg-[#172535] text-white text-center font-inter w-auto py-[36px]">
+          {/* gird cols 1 */}
+          <div className="mt-[40px]  border px-[30px] border-[#64788E] rounded-[8px] bg-[#172535] text-white text-center font-inter w-auto py-[36px]">
             <div className="mb-[50px] ">
               <h1 className="text-[18px] font-semibold">
                 Single Shared Hosting
@@ -304,255 +305,265 @@ const ChoseHostingPackag = () => {
               </div>
             </div>
           </div>
-          <div className="border px-[30px] border-[#64788E] rounded-[8px] bg-white text-black text-center font-inter w-auto py-[36px]">
-            <div className="mb-[50px] ">
-              <h1 className="text-[18px] font-semibold">
-                Premium Shared Hosting
-              </h1>
-              <p>Perfect package for personal websites</p>
+          {/* gird cols 1 */}
+          <div className="relative">
+            <div className="  bg-[#007aff] z-10 absolute   text-white p-3 w-full rounded-md  ">
+              <h1 className="uppercase">most popular </h1>
             </div>
-            <div className="">
-              <p className="text-[18px] ">
-                $12.49
-                <span className="ml-1 text-sm bg-[#007aff] px-3 py-2 rounded-3xl ">
-                  {" "}
-                  SAVE 76%
-                </span>
-              </p>
+            <div className=" border px-[30px] border-[#64788E] rounded-[8px] bg-white text-black text-center font-inter w-auto py-[36px]  mt-[40px]">
+              <div className="mb-[50px] ">
+                <h1 className="text-[18px] font-semibold">
+                  Premium Shared Hosting
+                </h1>
+                <p>Perfect package for personal websites</p>
+              </div>
               <div className="">
-                <sup className="text-[24px] inline-block">$</sup>{" "}
-                <h1 className="text-[56px] font-bold inline-block">2.99</h1>
-                <sub className="inline-block text-[16]">/mo</sub>
-                <p>USD</p>
-              </div>
-              <div className="mt-2">
-                <button className="   bg-[#007aff] px-[36px]      py-[15px] font-[300] text-[18px] rounded-[50px]  block w-full">
-                  Select
-                </button>
-                <p className="mt-[18px]">$6.99/mo when you renew</p>
-              </div>
-              <div className="text-start mt-[40px]">
-                <p>Top feature comparison</p>
-                <p className="py-2">
-                  {" "}
-                  <span className="mr-1 font-bold">100</span> website
+                <p className="text-[18px] ">
+                  $12.49
+                  <span className="ml-1 text-sm bg-[#007aff] px-3 py-2 rounded-3xl ">
+                    {" "}
+                    SAVE 76%
+                  </span>
                 </p>
-                <p className="py-2">
-                  {" "}
-                  <span className="mr-1 font-bold">100 GB</span> SSD Storage
-                </p>
-                <p className="py-2">
-                  {" "}
-                  <span className="mr-1 font-bold">~25 000</span> Visits Monthly
-                  <img src="" alt="" />
-                </p>
-                <p className="py-2">
-                  {" "}
-                  <span className="mr-1 font-bold">Free</span> Email Account
-                </p>
-                <p className="py-2">
-                  {" "}
-                  <span className="mr-1 font-bold">Unlimited GB</span> Bandwidth
-                </p>
-                <p className="py-2 mb-2">
-                  {" "}
-                  <span className="mr-1 font-bold">Unlimited </span> Databases
-                </p>
-                <p className="py-3">Security</p>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
+                <div className="">
+                  <sup className="text-[24px] inline-block">$</sup>{" "}
+                  <h1 className="text-[56px] font-bold inline-block">2.99</h1>
+                  <sub className="inline-block text-[16]">/mo</sub>
+                  <p>USD</p>
+                </div>
+                <div className="mt-2">
+                  <button className="   bg-[#007aff] px-[36px]      py-[15px] font-[300] text-[18px] rounded-[50px]  block w-full">
+                    Select
+                  </button>
+                  <p className="mt-[18px]">$6.99/mo when you renew</p>
+                </div>
+                <div className="text-start mt-[40px]">
+                  <p>Top feature comparison</p>
+                  <p className="py-2">
                     {" "}
-                    <span className="mr-1 font-bold">Unlimeted</span> Free SSL
+                    <span className="mr-1 font-bold">100</span> website
                   </p>
+                  <p className="py-2">
+                    {" "}
+                    <span className="mr-1 font-bold">100 GB</span> SSD Storage
+                  </p>
+                  <p className="py-2">
+                    {" "}
+                    <span className="mr-1 font-bold">~25 000</span> Visits
+                    Monthly
+                    <img src="" alt="" />
+                  </p>
+                  <p className="py-2">
+                    {" "}
+                    <span className="mr-1 font-bold">Free</span> Email Account
+                  </p>
+                  <p className="py-2">
+                    {" "}
+                    <span className="mr-1 font-bold">Unlimited GB</span>{" "}
+                    Bandwidth
+                  </p>
+                  <p className="py-2 mb-2">
+                    {" "}
+                    <span className="mr-1 font-bold">Unlimited </span> Databases
+                  </p>
+                  <p className="py-3">Security</p>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">Unlimeted</span> Free SSL
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2   inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">Cloudflare</span>Protected
-                  </p>
-                  <p> Nameservers</p>
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={wrong}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">Cloudflare </span>CDN
-                    ($9.95 value)
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2   inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">Cloudflare</span>
+                      Protected
+                    </p>
+                    <p> Nameservers</p>
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={wrong}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">Cloudflare </span>CDN
+                      ($9.95 value)
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <p className="py-3">Free Bonuses</p>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">Weekly Backups</span> L
-                  </p>
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={wrong}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">Free </span> Domain ($8.99
-                    value)
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <p className="py-3">Free Bonuses</p>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">Weekly Backups</span> L
+                    </p>
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={wrong}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">Free </span> Domain
+                      ($8.99 value)
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <p className="py-3">Free Bonuses</p>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">Managed </span> WordPress
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <p className="py-3">Free Bonuses</p>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">Managed </span> WordPress
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={wrong}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">WordPress </span>
-                    Acceleration
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={wrong}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">WordPress </span>
+                      Acceleration
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={wrong}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">
-                      WordPress Staging Tool{" "}
-                    </span>
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={wrong}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">
+                        WordPress Staging Tool{" "}
+                      </span>
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <p className="py-3">Free Bonuses</p>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">30 Days</span>Money Back
-                    Guarantee
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <p className="py-3">Free Bonuses</p>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">30 Days</span>Money Back
+                      Guarantee
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">24/7/365 </span>Support
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">24/7/365 </span>Support
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <div className=" ">
-                  <img
-                    className="inline-block mr-2 h-[11px] w-[14px]"
-                    src={right}
-                    alt=""
-                  />
-                  <p className="py-2 mb-2 inline-block">
-                    {" "}
-                    <span className="mr-1 font-bold">99.9%</span> Uptime
-                    Guarantee
-                  </p>
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <div className=" ">
+                    <img
+                      className="inline-block mr-2 h-[11px] w-[14px]"
+                      src={right}
+                      alt=""
+                    />
+                    <p className="py-2 mb-2 inline-block">
+                      {" "}
+                      <span className="mr-1 font-bold">99.9%</span> Uptime
+                      Guarantee
+                    </p>
 
-                  <img
-                    className="inline-block ml-2 h-[14px] w-[13px]"
-                    src={help}
-                    alt=""
-                  />
-                </div>
-                <div className=" flex justify-center items-center cursor-pointer">
-                  <p className="  inline-block mr-2">See all features </p>
-                  <img className="inline-block" src={arrow} alt="" />
+                    <img
+                      className="inline-block ml-2 h-[14px] w-[13px]"
+                      src={help}
+                      alt=""
+                    />
+                  </div>
+                  <div className=" flex justify-center items-center cursor-pointer">
+                    <p className="  inline-block mr-2">See all features </p>
+                    <img className="inline-block" src={arrow} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="border px-[30px] border-[#64788E] rounded-[8px] bg-[#172535] text-white text-center font-inter w-auto py-[36px]">
+          {/* gird cols 1 */}
+          <div className="mt-[40px] border px-[30px] border-[#64788E] rounded-[8px] bg-[#172535] text-white text-center font-inter w-auto py-[36px]">
             <div className="mb-[50px] ">
               <h1 className="text-[18px] font-semibold">
                 Business Shared Hosting
