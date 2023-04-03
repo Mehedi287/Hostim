@@ -1,5 +1,6 @@
 import React from "react";
 import ChoseHostingPackag from "../components/ChoseHostingPackag";
+import Commnet from "../components/Commnet";
 import HomeBanner from "../components/HomeBanner";
 import Navbar from "../components/Navbar";
 import OurServicesIncludes from "../components/OurServicesIncludes";
@@ -17,6 +18,7 @@ const Home = () => {
       <Services />
       <ChoseHostingPackag />
       <OurServicesIncludes />
+      <Commnet></Commnet>
     </div>
   );
 };

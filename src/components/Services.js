@@ -10,13 +10,13 @@ const Services = () => {
   return (
     <div className="  bg-white ">
       <div className="relative container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-8 px-3 md:px-0  ">
-        <div className="  grid grid-cols-1  md:grid-cols-2 bg-left-bottom  gap-[40px]   h-full   ">
+        <div className="  grid grid-cols-1  md:grid-cols-2 bg-left-bottom  gap-[120px]   h-full   ">
           <div
-            className=" bg-no-repeat bg-contain h-full   relative md:top-[50px]  top-[20px] md:ml-4 "
+            className=" bg-no-repeat bg-contain h-full   relative md:top-[60px]  top-[20px] md:ml-4 "
             style={{ backgroundImage: `url(${imgBg})` }}
           >
             <img
-              className="md:absolute  relative  md:top-[-100px] lg:top-[-38px] md:left-[5px]  lg:left-[50px] md:bottom-[50px]  bottom-[100px] "
+              className="md:absolute  relative  md:top-[-100px] lg:top-[-50px] md:left-[5px]  lg:left-[40px] md:bottom-[50px]  bottom-[100px] "
               src={serviceMan}
               alt=""
             />
@@ -74,7 +74,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="absolute right-0  top-[510px]  md:top-0 md:left-[400px]  lg:left-[680px] overflow-hidden inset-0 bg-blue-800 -z-5 md:w-[50vw] lg:[w-100vw] "></div>
+          <div className="absolute right-0  top-[510px]  md:top-0 md:left-[400px]  lg:left-[650px] overflow-hidden inset-0 bg-blue-800 -z-5 md:w-[50vw] lg:[w-100vw] "></div>
         </div>
       </div>
     </div>
