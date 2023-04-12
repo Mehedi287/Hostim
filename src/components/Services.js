@@ -16,11 +16,11 @@ const Services = () => {
             style={{ backgroundImage: `url(${imgBg})` }}
           >
             <img
-              className="md:absolute  relative  md:top-[-100px] lg:top-[-50px] md:left-[5px]  lg:left-[40px] md:bottom-[50px]  bottom-[100px] "
+              className="md:absolute  relative  md:top-[-100px] lg:top-[-100px] md:left-[5px]  lg:left-[25px] md:bottom-[50px]  bottom-[100px] "
               src={serviceMan}
               alt=""
             />
-            <div className="absolute  top-[300px] md:top-[300px] lg:top-[455px] left-1/3 -rotate-[17deg]">
+            <div className="absolute  top-[300px] md:top-[300px] lg:top-[400px] left-1/3 -rotate-[17deg]">
               <a
                 href=" "
                 className="flex justify-center items-center py-2 rounded-md px-3 xl:px-12  text-white rounded-0  bg-[#007aff]"
