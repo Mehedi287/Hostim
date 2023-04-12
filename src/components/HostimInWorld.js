@@ -9,18 +9,18 @@ const HostimInWorld = () => {
             Hostim in world <br /> Datacenters
           </h1>
         </div>
-        <div className="flex md:flex-row gap-3 md:gap-0 flex-col md:mt-0 mt-5  ">
+        <div className="grid lg:grid-cols-3 grid-cols-1  justify-around  gap-3 md:gap-0   md:mt-0 mt-5 ">
           <div className="p-4 mr-4 text-center border border-gray-300 rounded-md">
             <h1 className="font-[400]  text-[48px]">2</h1>
             <p className="text-[18px] text-gray-600  ">Continents</p>
           </div>
           <div className="p-4 mr-4 text-center border border-gray-300 rounded-md">
-            <h1 className="font-[400]  text-[48px]">2</h1>
-            <p className="text-[18px] text-gray-600  ">Continents</p>
+            <h1 className="font-[400]  text-[48px]">4</h1>
+            <p className="text-[18px] text-gray-600  ">Pays</p>
           </div>
           <div className="p-4 mr-4 text-center border border-gray-300 rounded-md">
-            <h1 className="font-[400]  text-[48px]">2</h1>
-            <p className="text-[18px] text-gray-600  ">Continents</p>
+            <h1 className="font-[400]  text-[48px]">3</h1>
+            <p className="text-[18px] text-gray-600  ">Localsations</p>
           </div>
         </div>
       </div>

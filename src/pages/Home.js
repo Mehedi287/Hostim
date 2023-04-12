@@ -2,6 +2,7 @@ import React from "react";
 import AskQuestion from "../components/AskQuestion";
 import ChoseHostingPackag from "../components/ChoseHostingPackag";
 import Commnet from "../components/Commnet";
+import Footer from "../components/Footer";
 import HomeBanner from "../components/HomeBanner";
 import HostimInWorld from "../components/HostimInWorld";
 import Navbar from "../components/Navbar";
@@ -30,6 +31,7 @@ const Home = () => {
       <Re_useableGrid></Re_useableGrid>
       <HostimInWorld></HostimInWorld>
       <AskQuestion></AskQuestion>
+      <Footer></Footer>
     </div>
   );
 };

@@ -29,7 +29,7 @@ const AskQuestion = () => {
     <div className="container mt-[40px] lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-8 px-4 md:px-[0px] mx-auto w-full    ">
       <div className="mb-[100px]">
         {" "}
-        <h1 className="  text-center text-[32px] md:text-[40px] font-[600]   mt-4  leading-[32px] md:leading-[48px] ">
+        <h1 className="  text-center text-[32px] md:text-[40px] font-[600]   mt-4 mb-3  leading-[32px] md:leading-[48px] ">
           Frequently Asked Questions
         </h1>
         <p>Everything you need to know about the product and billing.</p>

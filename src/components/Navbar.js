@@ -102,7 +102,7 @@ const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4 text-inherit text-[16px]  rounded md:bg-transparent  md:p-0    "
+                      class="block py-2 pl-3 pr-4 text-blue-500 text-[16px] font-semibold   rounded md:bg-transparent  md:p-0    "
                       aria-current="page"
                     >
                       Home
@@ -113,7 +113,7 @@ const Navbar = () => {
                       onClick={handleHidden}
                       id="dropdownNavbarLink"
                       data-dropdown-toggle="dropdownNavbar"
-                      class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-medium   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto   "
+                      class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-[500]  text-[18px]  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 md:w-auto   "
                     >
                       Hosting{" "}
                       <svg
@@ -192,7 +192,7 @@ const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      class="block py-2 pl-3 pr-4  rounded hover:text-blue-700  md:border-0 md:hover:text-blue-700 md:p-0  "
+                      class="block py-2 pl-3 pr-4  rounded hover:text-blue-500 font-[500] text-[18px] md:border-0 md:hover:text-blue-700 md:p-0  "
                     >
                       VPS
                     </a>
@@ -202,9 +202,9 @@ const Navbar = () => {
                       onClick={handleEmailDrop}
                       id="dropdownNavbarLink"
                       data-dropdown-toggle="dropdownNavbar"
-                      class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-medium   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto   "
+                      class="flex items-center justify-center w-full py-2 pl-3 pr-4 font-[500]  text-[18px]  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 md:w-auto   "
                     >
-                      Hosting{" "}
+                      Email{" "}
                       <svg
                         class="w-5 h-5 ml-1"
                         aria-hidden="true"
