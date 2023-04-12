@@ -22,7 +22,7 @@ const ChoseHostingPackag = () => {
       style={{
         backgroundImage: `url(${homeBg})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundSize: "contain",
       }}
     >
       <div className="container lg:ml-[99.6px]  lg:mr-[99.6px]  lg:px-[96px] py-1 pb-[102px] px-5 md:px-[0px] mx-auto relative">
