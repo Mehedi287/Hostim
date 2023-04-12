@@ -15,7 +15,7 @@ const Slider = () => {
           <div class=" relative  duration-700 ease-in-out" data-carousel-item>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-9">
               {items.map((item) => (
-                <div className="flex-row justify-start  text-left my-[12px] ">
+                <div className="flex-row justify-start  text-left my-[12px] md:px-0 px-4">
                   <img src={star} alt="" />
                   <p className="text-[18px] my-[12px]">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor

@@ -7,6 +7,7 @@ import OurServicesIncludes from "../components/OurServicesIncludes";
 import Services from "../components/Services";
 import Slider from "../components/Slider";
 import Soluation from "../components/Soluation";
+import Re_useableGrid from "../re_useable/Re_useableGrid";
 
 import BrandSection from "./../components/BrandSection";
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <OurServicesIncludes />
       <Commnet></Commnet>
       <Slider />
+      <Re_useableGrid></Re_useableGrid>
     </div>
   );
 };
