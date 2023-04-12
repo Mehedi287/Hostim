@@ -57,9 +57,7 @@ const Navbar = () => {
         </div>
         <div
           className={`px-4 z-40 md:mx-auto md:px-5  fixed top-[35px] ${
-            !isDark
-              ? " lg:text-white bg-transparent"
-              : "bg-gray-100 text-black "
+            !isDark ? " lg:text-white bg-transparent" : "bg-white text-black "
           }   w-full  `}
         >
           <nav className={`    py-2 w-full mx-auto`}>

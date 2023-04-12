@@ -1,7 +1,9 @@
 import React from "react";
+import AskQuestion from "../components/AskQuestion";
 import ChoseHostingPackag from "../components/ChoseHostingPackag";
 import Commnet from "../components/Commnet";
 import HomeBanner from "../components/HomeBanner";
+import HostimInWorld from "../components/HostimInWorld";
 import Navbar from "../components/Navbar";
 import OurServicesIncludes from "../components/OurServicesIncludes";
 import Services from "../components/Services";
@@ -26,6 +28,8 @@ const Home = () => {
       <Re_useableGrid></Re_useableGrid>
       <WhiteBg></WhiteBg>
       <Re_useableGrid></Re_useableGrid>
+      <HostimInWorld></HostimInWorld>
+      <AskQuestion></AskQuestion>
     </div>
   );
 };
